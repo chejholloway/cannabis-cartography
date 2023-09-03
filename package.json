@@ -1,0 +1,72 @@
+{
+  "name": "kali-mist",
+  "description": "Technical Assessment for Front-end Engineering Candidates",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -o .storybook/build"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/__test__/*.{js,jsx,ts,tsx}",
+      "!src/**/*.story.{js,jsx,ts,tsx}",
+      "!src/**/*.test.{js,jsx,ts,tsx}",
+      "!src/**/*styles.{js,jsx,ts,tsx,css,scss}",
+      "!src/constants/**/*.{js,jsx,ts,tsx}",
+      "!src/icons/**/*.{js,jsx,ts,tsx}",
+      "!src/index.{js,jsx,ts,tsx}",
+      "!src/setupTests.{js,jsx,ts,tsx}",
+      "!src/storyBuilder.{js,jsx,ts,tsx}",
+      "!src/services/utils.{js,jsx,ts,tsx}",
+      "!src/store/configureStore.{js,jsx,ts,tsx}",
+      "!src/store/reducers/index.{js,jsx,ts,tsx}"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "connected-react-router": "^6.4.0",
+    "history": "^4.9.0",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.get": "^4.4.2",
+    "lodash.pick": "^4.4.0",
+    "lodash.set": "^4.3.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-html-parser": "^2.0.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-knobs": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "fetch-mock": "^7.2.5",
+    "react-test-renderer": "^16.6.3",
+    "redux-mock-store": "^1.5.3"
+  }
+}
